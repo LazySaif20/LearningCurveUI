@@ -1,0 +1,65 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-08T11:40:44.500Z",
+        "line": 7,
+        "name": "Validate Cars guide Logo is present",
+        "description": "",
+        "id": "validate-cars-guide-homepage;validate-cars-guide-logo-is-present",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2992500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "when user is on the CarsGuide HomePage",
+            "match": {
+              "location": "StepDefinitions.CarsGuideHomePageStepDefinitions.when_user_is_on_the_cars_guide_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 995900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is able to see the CarsGuide Logo",
+            "match": {
+              "location": "StepDefinitions.CarsGuideHomePageStepDefinitions.user_is_able_to_see_the_cars_guide_logo()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HomePageValidation"
+          },
+          {
+            "name": "@ValidateCarsGuideLogoSection"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Cars Guide Homepage",
+    "description": "",
+    "id": "validate-cars-guide-homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/ValidateLogin.feature",
+    "tags": [
+      {
+        "name": "@HomePageValidation",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
