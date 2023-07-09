@@ -4,15 +4,15 @@ public class DriverConfiguration {
 
 	private String browser;
 	private String browserVersion;
-	private String os;
+	private String platform;
 	private String env;
 	private boolean headless;
 
-	public DriverConfiguration(String browser, String browserVersion, String os, String env, boolean headless) {
+	public DriverConfiguration(String browser, String browserVersion, String platform, String env, boolean headless) {
 		super();
 		this.browser = browser;
 		this.browserVersion = browserVersion;
-		this.os = os;
+		this.platform = platform;
 		this.env = env;
 		this.headless = headless;
 	}
@@ -34,11 +34,11 @@ public class DriverConfiguration {
 	}
 
 	public String getOs() {
-		return os;
+		return platform;
 	}
 
-	public void setOs(String os) {
-		this.os = os;
+	public void setOs(String platform) {
+		this.platform = platform;
 	}
 
 	public String getEnv() {

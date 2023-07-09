@@ -114,5 +114,11 @@
 			<artifactId>owner-java8</artifactId>
 			<version>1.0.12</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>maven-cucumber-reporting</artifactId>
+			<version>5.7.5</version>
+		</dependency>
 	</dependencies>
 </project>

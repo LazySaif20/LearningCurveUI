@@ -1,12 +1,34 @@
 package StepDefinitions;
 
+import org.openqa.selenium.WebDriver;
+
+import BasePage.BasePage;
+import BasePage.PageObjectManager;
+import DriverConfiguration.EnvironmentConfig;
+import Runner.TestRunner;
+import Utils.DataContainer;
 import io.cucumber.java.en.*;
 
 public class CarsGuideHomePageStepDefinitions {
+	
+	WebDriver driver;
+	BasePage basePage;
+	EnvironmentConfig envConfig = TestRunner.envConfig;
+	DataContainer dataHolder;
+	PageObjectManager pageObjectManager;
+	
+	public CarsGuideHomePageStepDefinitions(DataContainer dataHolder) {
+		this.dataHolder = dataHolder;
+		this.driver = dataHolder.driver;
+		this.pageObjectManager = new PageObjectManager(driver);
+	}
+	
+	
 	@Given("when user is on the CarsGuide HomePage")
 	public void when_user_is_on_the_cars_guide_home_page() {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Hello1");
+		pageObjectManager.getBasePage().launchUrl(envConfig.sitrUrl());
+		
 	}
 
 	@Then("user is able to see the CarsGuide Logo")

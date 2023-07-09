@@ -33,7 +33,9 @@ public class BaseRunner extends AbstractTestNGCucumberTests{
 			put("env", env);
 		}};
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
-		//envConfig = ConfigCache.getOrCreate(EnvironmentConfig.class, envMapping);
+		envConfig = ConfigCache.getOrCreate(EnvironmentConfig.class, envMapping);
+		drivers = new HashMap<Long, WebDriver>();
+		
 	}
 	
 
