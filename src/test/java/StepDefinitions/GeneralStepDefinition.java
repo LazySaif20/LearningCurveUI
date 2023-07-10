@@ -46,7 +46,7 @@ public class GeneralStepDefinition {
 	
 	@After
 	public void afterScenario() {
-		if(scenario.isFailed()) {
+		if(scenario.isFailed() || !scenario.isFailed()) {
 			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "FailureScreenShot");
 			//logger.info("\n Scenario end. Status: {}", scenario.getStatus());

@@ -6,8 +6,7 @@ public class PageObjectManager {
 	
 	private WebDriver driver;
 	private BasePage basePage;
-	private HomePage homePage;
-	
+	private CarsHomePage carsHomePage;
 	
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
@@ -15,18 +14,10 @@ public class PageObjectManager {
 	}
 
 	public BasePage getBasePage() {
-	    if (basePage == null) {
-	        basePage = new BasePage(this.driver);
-	    }
-	    return basePage;
+	    if (basePage == null) { basePage = new BasePage(this.driver);}return basePage;
 	}
 	
-	public HomePage gethomePage() {
-	    if (homePage == null) {
-	    	homePage = new HomePage(this.driver);
-	    }
-	    return homePage;
+	public CarsHomePage getcarsHomePage() {
+		if (carsHomePage == null) { carsHomePage = new CarsHomePage(this.driver);}return carsHomePage;
 	}
-
-	
 }

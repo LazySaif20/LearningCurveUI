@@ -1,4 +1,4 @@
-package Utils;
+package BasePage;
 
 import java.time.Duration;
 

@@ -3,6 +3,7 @@ package StepDefinitions;
 import org.openqa.selenium.WebDriver;
 
 import BasePage.BasePage;
+import BasePage.CarsHomePage;
 import BasePage.PageObjectManager;
 import DriverConfiguration.EnvironmentConfig;
 import Runner.TestRunner;
@@ -34,6 +35,7 @@ public class CarsGuideHomePageStepDefinitions {
 	@Then("user is able to see the CarsGuide Logo")
 	public void user_is_able_to_see_the_cars_guide_logo() {
 	    // Write code here that turns the phrase above into concrete actions
-		
+		CarsHomePage carsHomePage = pageObjectManager.getcarsHomePage();
+		carsHomePage.validateIsLogoPresent();
 	}
 }
