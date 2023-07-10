@@ -31,6 +31,6 @@ public class ReportGenerate {
 		conf.addClassifications("Environment", TestRunner.envConfig.env().toUpperCase());
 		
 		ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, conf);
-		reportBuilder.generateReports();
+		//reportBuilder.generateReports();
 	}
 }

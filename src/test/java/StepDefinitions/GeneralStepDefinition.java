@@ -11,7 +11,7 @@ import BasePage.PageObjectManager;
 import DriverConfiguration.DriverConfiguration;
 import DriverConfiguration.DriverFactory;
 import DriverConfiguration.EnvironmentConfig;
-import Runner.BaseRunner;
+import Runner.TestRunner;
 import Utils.DataContainer;
 import io.cucumber.core.logging.LoggerFactory;
 import io.cucumber.java.After;
@@ -27,10 +27,10 @@ public class GeneralStepDefinition {
 	WebDriver driver;
 	PageObjectManager pageObjectManager;
 	
-	EnvironmentConfig envConfig = BaseRunner.envConfig;
+	EnvironmentConfig envConfig = TestRunner.envConfig;
 	
 	public GeneralStepDefinition(DataContainer dataHolder) {
-		this.driverConfig = BaseRunner.driversConfig.get(Thread.currentThread().getId());
+		this.driverConfig = TestRunner.driversConfig.get(Thread.currentThread().getId());
 		this.dataHolder = dataHolder;
 	}
 	
@@ -51,7 +51,7 @@ public class GeneralStepDefinition {
 			scenario.attach(screenshot, "image/png", "FailureScreenShot");
 			//logger.info("\n Scenario end. Status: {}", scenario.getStatus());
 		}
-		driver.close();
+		//driver.close();
 		driver.quit();
 	}
 	
