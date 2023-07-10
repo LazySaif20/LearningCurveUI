@@ -7,3 +7,4 @@ Feature: Validate Cars Guide Homepage
   Scenario: Validate Cars guide Logo is present
 	Given when user is on the CarsGuide HomePage
 	Then user is able to see the CarsGuide Logo
+	Then search for "BMW"

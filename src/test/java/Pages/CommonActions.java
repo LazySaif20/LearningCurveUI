@@ -1,8 +1,9 @@
-package BasePage;
+package Pages;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -40,5 +41,23 @@ public class CommonActions {
 			return true;
 		}
 		return false;
+	}
+
+	public void writeInto(By by, String keyWords) {
+		new WebDriverWait(driver, Duration.ofSeconds(10))
+				.until(ExpectedConditions.visibilityOf(driver.findElement(by)));
+		getElemrnt(by).sendKeys(keyWords);
+	}
+
+	public void click(By by) {
+		new WebDriverWait(driver, Duration.ofSeconds(10))
+				.until(ExpectedConditions.visibilityOf(driver.findElement(by)));
+		getElemrnt(by).click();
+	}
+
+	public void pressEnter(By by) {
+		new WebDriverWait(driver, Duration.ofSeconds(10))
+				.until(ExpectedConditions.visibilityOf(driver.findElement(by)));
+		getElemrnt(by).sendKeys(Keys.ENTER);
 	}
 }

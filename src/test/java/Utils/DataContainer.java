@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 
-import BasePage.PageObjectManager;
 import DriverConfiguration.DriverConfiguration;
+import Pages.PageObjectManager;
 import io.cucumber.java.Scenario;
 
 public class DataContainer {

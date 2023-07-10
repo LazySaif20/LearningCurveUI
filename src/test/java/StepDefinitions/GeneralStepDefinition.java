@@ -5,15 +5,13 @@ import java.net.MalformedURLException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.slf4j.*;
 
-import BasePage.PageObjectManager;
 import DriverConfiguration.DriverConfiguration;
 import DriverConfiguration.DriverFactory;
 import DriverConfiguration.EnvironmentConfig;
+import Pages.PageObjectManager;
 import Runner.TestRunner;
 import Utils.DataContainer;
-import io.cucumber.core.logging.LoggerFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -42,11 +40,11 @@ public class GeneralStepDefinition {
 		this.dataHolder.setDriver(driver);
 		this.pageObjectManager = new PageObjectManager(driver);
 		this.dataHolder.setPageObjectManager(pageObjectManager);
-	}
+	} 
 	
 	@After
 	public void afterScenario() {
-		if(scenario.isFailed() || !scenario.isFailed()) {
+		if(scenario.isFailed()) {
 			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "FailureScreenShot");
 			//logger.info("\n Scenario end. Status: {}", scenario.getStatus());

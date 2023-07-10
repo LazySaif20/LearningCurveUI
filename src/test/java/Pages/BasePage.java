@@ -1,4 +1,4 @@
-package BasePage;
+package Pages;
 
 import java.time.Duration;
 
@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import DriverConfiguration.EnvironmentConfig;
 import Runner.TestRunner;
+
 
 public class BasePage {
 	
