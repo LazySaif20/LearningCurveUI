@@ -22,7 +22,7 @@ import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
-@CucumberOptions(features = "src/test/resources/Features", glue = { "StepDefinitions" }, plugin = {
+@CucumberOptions(features = "src/test/resources/Features", glue = { "StepDefinitions", "Hooks" }, plugin = {
 		"json:target/cucumber-reports/CucumberTestReport.json", "html:target/cucumber-reports/CucumberTestReport.html",
 		"rerun:target/cucumber-reports/CucumberTestReport.txt", "pretty" }, tags = "@ValidateCarsGuideLogoSection")
 public class TestRunner {
