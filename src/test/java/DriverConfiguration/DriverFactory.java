@@ -2,6 +2,7 @@ package DriverConfiguration;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.DriverManager;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;

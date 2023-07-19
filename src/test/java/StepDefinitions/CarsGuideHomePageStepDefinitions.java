@@ -38,7 +38,7 @@ public class CarsGuideHomePageStepDefinitions {
 	}
 	
 	@Then("search for {string}")
-	public void search_for(String carsName) {
+	public void search_for(String carsName) throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 		CarsHomePage carsHomePage = pageObjectManager.getcarsHomePage();
 		carsHomePage.searchPreferredCar(carsName);

@@ -5,7 +5,7 @@
   <parameter name="browser" value="chrome"/>
   <parameter name="browserVersion" value="latest"/>
   <parameter name="platform" value="Windows 10"/>
-  <parameter name="env" value="remote-Android"/>
+  <parameter name="env" value="qa"/>
   <parameter name="headless" value="false"/>
   <classes>
   	<class name="Runner.TestRunner"/>

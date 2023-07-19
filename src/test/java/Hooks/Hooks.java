@@ -43,14 +43,14 @@ public class Hooks {
 	} 
 	
 	@After
-	public void afterScenario() {
+	public void afterScenario() throws InterruptedException {
 		if(scenario.isFailed()) {
 			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "FailureScreenShot");
 			//logger.info("\n Scenario end. Status: {}", scenario.getStatus());
 		}
 		//driver.close();
-		driver.quit();
+		//driver.quit();
 	}
 	
 	public void logInReport(String item, String str) {

@@ -17,9 +17,10 @@ public class CarsHomePage extends BasePage{
 		commonActions.isElementDisplayed(carsGuideLogo);
 	}
 	
-	public void searchPreferredCar(String carsName)
+	public void searchPreferredCar(String carsName) throws InterruptedException
 	{
 		commonActions.writeInto(searchBox, carsName);
+		Thread.sleep(1000);
 		commonActions.pressEnter(searchBox);
 	}
 
