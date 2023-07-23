@@ -23,8 +23,8 @@ import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = "src/test/resources/Features", glue = { "StepDefinitions", "Hooks" }, plugin = {
-		"json:target/cucumber-reports/CucumberTestReport.json", "html:target/cucumber-reports/CucumberTestReport.html",
-		"rerun:target/cucumber-reports/CucumberTestReport.txt", "pretty" }, tags = "@ValidateCarsGuideLogoSection")
+		"json:target/cucumber-reports/CucumberUI_Report.json", "html:target/cucumber-reports/CucumberUI_Report.html",
+		"rerun:target/cucumber-reports/CucumberUI_Report.txt", "pretty" }, tags = "@ValidateCarsGuideLogoSection")
 public class TestRunner {
 
 	private io.cucumber.testng.TestNGCucumberRunner testNGCucumberRunner;
