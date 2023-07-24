@@ -1,0 +1,463 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "cerulean",
+      "year": 2000,
+      "color": "#98B2D1",
+      "pantone_value": "15-4020",
+      "categories": [
+        {
+          "CategoryID": 1,
+          "CategoryName": "Example 1"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "fuchsia rose",
+      "year": 2001,
+      "color": "#C74375",
+      "pantone_value": "17-2031",
+      "categories": [
+        {
+          "CategoryID": 2,
+          "CategoryName": "Example 2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "true red",
+      "year": 2002,
+      "color": "#BF1932",
+      "pantone_value": "19-1664",
+      "categories": [
+        {
+          "CategoryID": 3,
+          "CategoryName": "Example 3"
+        }
+      ]
+    },
+    {
+      "color": 1760922275,
+      "year": 1927,
+      "name": "Mohammed Bode",
+      "id": 54,
+      "pantone_value": "B'Elanna Torres",
+      "categories": [
+        {
+          "CategoryID": 29,
+          "CategoryName": "Leannon, Cummings and Abernathy"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1947,
+      "name": "Nigel Casper",
+      "id": 32,
+      "pantone_value": "Spock",
+      "categories": [
+        {
+          "CategoryID": 28,
+          "CategoryName": "Herzog, Casper and Lakin"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1964,
+      "name": "Miss Josefa Larkin",
+      "id": 60,
+      "pantone_value": "Jonathan Archer",
+      "categories": [
+        {
+          "CategoryID": 71,
+          "CategoryName": "Hoppe-Bernhard"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1972,
+      "name": "Sadye Dicki",
+      "id": 75,
+      "pantone_value": "Spock",
+      "categories": [
+        {
+          "CategoryID": 88,
+          "CategoryName": "Mohr and Sons"
+        }
+      ]
+    },
+    {
+      "color": 1265094573,
+      "year": 1904,
+      "name": "Taunya Bradtke",
+      "id": 45,
+      "pantone_value": "The Doctor",
+      "categories": [
+        {
+          "CategoryID": 71,
+          "CategoryName": "Reinger-Gusikowski"
+        }
+      ]
+    },
+    {
+      "color": 2107080524,
+      "year": 1900,
+      "name": "Monserrate Bayer V",
+      "id": 57,
+      "pantone_value": "Jake Sisko",
+      "categories": [
+        {
+          "CategoryID": 10,
+          "CategoryName": "Konopelski Inc"
+        }
+      ]
+    },
+    {
+      "color": 1114801802,
+      "year": 1954,
+      "name": "Tristan Cormier",
+      "id": 28,
+      "pantone_value": "Chakotay",
+      "categories": [
+        {
+          "CategoryID": 40,
+          "CategoryName": "Predovic-Steuber"
+        }
+      ]
+    },
+    {
+      "color": 2101980129,
+      "year": 1912,
+      "name": "Miss Connie Schumm",
+      "id": 76,
+      "pantone_value": "Harry Kim",
+      "categories": [
+        {
+          "CategoryID": 31,
+          "CategoryName": "Ledner-Hackett"
+        }
+      ]
+    },
+    {
+      "color": 1284146969,
+      "year": 1981,
+      "name": "Arlen Schamberger I",
+      "id": 35,
+      "pantone_value": "Beverly Crusher",
+      "categories": [
+        {
+          "CategoryID": 72,
+          "CategoryName": "Pollich, Parker and Cruickshank"
+        }
+      ]
+    },
+    {
+      "color": 1284146969,
+      "year": 1920,
+      "name": "Ms. Jeff Walsh",
+      "id": 93,
+      "pantone_value": "Kes",
+      "categories": [
+        {
+          "CategoryID": 60,
+          "CategoryName": "Welch LLC"
+        }
+      ]
+    },
+    {
+      "color": 835721928,
+      "year": 2016,
+      "name": "Charissa Beahan",
+      "id": 53,
+      "pantone_value": "Montgomery Scott",
+      "categories": [
+        {
+          "CategoryID": 60,
+          "CategoryName": "Bahringer Inc"
+        }
+      ]
+    },
+    {
+      "color": 1708982359,
+      "year": 2009,
+      "name": "Myesha Raynor",
+      "id": 56,
+      "pantone_value": "Odo",
+      "categories": [
+        {
+          "CategoryID": 25,
+          "CategoryName": "Barton LLC"
+        }
+      ]
+    },
+    {
+      "color": 118576512,
+      "year": 1929,
+      "name": "Mr. Cary Runte",
+      "id": 16,
+      "pantone_value": "Hoshi Sato",
+      "categories": [
+        {
+          "CategoryID": 32,
+          "CategoryName": "Pfannerstill, Boehm and Casper"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1957,
+      "name": "Abe Fahey",
+      "id": 65,
+      "pantone_value": "Julian Bashir",
+      "categories": [
+        {
+          "CategoryID": 76,
+          "CategoryName": "Daniel and Sons"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1910,
+      "name": "Jacques Hahn",
+      "id": 89,
+      "pantone_value": "Harry Kim",
+      "categories": [
+        {
+          "CategoryID": 80,
+          "CategoryName": "Schaefer and Sons"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1926,
+      "name": "Mitch Boyle",
+      "id": 84,
+      "pantone_value": "Beverly Crusher",
+      "categories": [
+        {
+          "CategoryID": 77,
+          "CategoryName": "MacGyver Group"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1961,
+      "name": "Carlo Stark",
+      "id": 38,
+      "pantone_value": "Data",
+      "categories": [
+        {
+          "CategoryID": 81,
+          "CategoryName": "Brakus, Stanton and Koss"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1998,
+      "name": "Tomiko Bins III",
+      "id": 83,
+      "pantone_value": "Data",
+      "categories": [
+        {
+          "CategoryID": 20,
+          "CategoryName": "Hilpert Inc"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 2000,
+      "name": "Kelley Prohaska",
+      "id": 41,
+      "pantone_value": "Charles Tucker III",
+      "categories": [
+        {
+          "CategoryID": 11,
+          "CategoryName": "Bode-Runolfsdottir"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1972,
+      "name": "Mr. Mariano Kautzer",
+      "id": 18,
+      "pantone_value": "Chakotay",
+      "categories": [
+        {
+          "CategoryID": 67,
+          "CategoryName": "Swaniawski-Hand"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1960,
+      "name": "Elvia Kohler Sr.",
+      "id": 37,
+      "pantone_value": "Jadzia Dax",
+      "categories": [
+        {
+          "CategoryID": 11,
+          "CategoryName": "Keeling, Kihn and Jaskolski"
+        }
+      ]
+    },
+    {
+      "color": 557403371,
+      "year": 1912,
+      "name": "Rhea Flatley",
+      "id": 29,
+      "pantone_value": "Kes",
+      "categories": [
+        {
+          "CategoryID": 96,
+          "CategoryName": "Effertz Inc"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1931,
+      "name": "Theola Kuhn",
+      "id": 8,
+      "pantone_value": "Deanna Troi",
+      "categories": [
+        {
+          "CategoryID": 75,
+          "CategoryName": "Lesch, Turcotte and Stracke"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1982,
+      "name": "Saran Hammes",
+      "id": 74,
+      "pantone_value": "Hikaru Sulu",
+      "categories": [
+        {
+          "CategoryID": 38,
+          "CategoryName": "Wintheiser, Mills and Jerde"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 2009,
+      "name": "Sanford Dare",
+      "id": 50,
+      "pantone_value": "Charles Tucker III",
+      "categories": [
+        {
+          "CategoryID": 75,
+          "CategoryName": "Leannon-Daniel"
+        }
+      ]
+    },
+    {
+      "color": 1265094573,
+      "year": 1977,
+      "name": "Josiah Oberbrunner",
+      "id": 25,
+      "pantone_value": "Spock",
+      "categories": [
+        {
+          "CategoryID": 34,
+          "CategoryName": "Gleichner-Doyle"
+        }
+      ]
+    },
+    {
+      "color": 95298384,
+      "year": 1928,
+      "name": "Jim Schowalter",
+      "id": 33,
+      "pantone_value": "Kira Nerys",
+      "categories": [
+        {
+          "CategoryID": 7,
+          "CategoryName": "Gleason, Denesik and Ratke"
+        }
+      ]
+    },
+    {
+      "color": 1760922275,
+      "year": 1919,
+      "name": "Alfonzo Gerlach",
+      "id": 15,
+      "pantone_value": "Kira Nerys",
+      "categories": [
+        {
+          "CategoryID": 88,
+          "CategoryName": "Farrell Group"
+        }
+      ]
+    },
+    {
+      "color": 1265094573,
+      "year": 1973,
+      "name": "Bo Kertzmann",
+      "id": 12,
+      "pantone_value": "Quark",
+      "categories": [
+        {
+          "CategoryID": 80,
+          "CategoryName": "Rempel, Strosin and Kutch"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 2004,
+      "name": "Nicolas Tromp",
+      "id": 11,
+      "pantone_value": "Phlox",
+      "categories": [
+        {
+          "CategoryID": 80,
+          "CategoryName": "Jenkins-Turner"
+        }
+      ]
+    },
+    {
+      "color": 1265094573,
+      "year": 1913,
+      "name": "Shela Bayer V",
+      "id": 31,
+      "pantone_value": "Kes",
+      "categories": [
+        {
+          "CategoryID": 45,
+          "CategoryName": "Lockman Group"
+        }
+      ]
+    },
+    {
+      "color": 1378387981,
+      "year": 1944,
+      "name": "Michelle Huels",
+      "id": 55,
+      "pantone_value": "Benjamin Sisko",
+      "categories": [
+        {
+          "CategoryID": 26,
+          "CategoryName": "Kuhn Inc"
+        }
+      ]
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
