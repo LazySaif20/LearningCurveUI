@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "name": "cerulean",
+      "name": "Tony Keebler",
       "year": 2000,
       "color": "#98B2D1",
       "pantone_value": "15-4020",
@@ -10,19 +10,6 @@
         {
           "CategoryID": 1,
           "CategoryName": "Example 1"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "fuchsia rose",
-      "year": 2001,
-      "color": "#C74375",
-      "pantone_value": "17-2031",
-      "categories": [
-        {
-          "CategoryID": 2,
-          "CategoryName": "Example 2"
         }
       ]
     },
@@ -417,28 +404,15 @@
       ]
     },
     {
-      "color": 1378387981,
-      "year": 2004,
-      "name": "Nicolas Tromp",
+      "color": 809154753,
+      "year": 1923,
+      "name": "Sol Hirthe",
       "id": 11,
-      "pantone_value": "Phlox",
+      "pantone_value": "Harry Kim",
       "categories": [
         {
-          "CategoryID": 80,
-          "CategoryName": "Jenkins-Turner"
-        }
-      ]
-    },
-    {
-      "color": 1265094573,
-      "year": 1913,
-      "name": "Shela Bayer V",
-      "id": 31,
-      "pantone_value": "Kes",
-      "categories": [
-        {
-          "CategoryID": 45,
-          "CategoryName": "Lockman Group"
+          "CategoryID": 87,
+          "CategoryName": "Klocko, Crona and Cormier"
         }
       ]
     }

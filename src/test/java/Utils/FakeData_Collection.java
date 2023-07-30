@@ -60,22 +60,6 @@ public class FakeData_Collection {
 		return catName;
 	}
 	
-//	public void setUserData() {
-//		map.put("id", FakeData_Collection.setId());
-//		map.put("name", FakeData_Collection.setName());
-//		map.put("year", FakeData_Collection.setYear());
-//		map.put("color", FakeData_Collection.setColor());
-//		map.put("pantone_value", FakeData_Collection.setPantoneValue());
-//		catMap.put("CategoryID", FakeData_Collection.setCategoryID());
-//		catMap.put("CategoryName", FakeData_Collection.setCategoryName());
-//		categories.add(catMap);
-//		map.put("categories1", categories);
-	
-	//catObject.put("CategoryID", FakeData_Collection.setCategoryID());
-			//catObject.put("CategoryName", FakeData_Collection.setCategoryName());
-			//jArray.put(new JSONObject().put("CategoryName", FakeData_Collection.setCategoryName()));
-//	}
-	
 	public static void setUserData_User() {
 		
 		jObject.put("id", FakeData_Collection.setId());
@@ -84,8 +68,12 @@ public class FakeData_Collection {
 		jObject.put("color", FakeData_Collection.setColor());
 		jObject.put("pantone_value", FakeData_Collection.setPantoneValue());
 		jArray.put(new JSONObject().put("CategoryName", FakeData_Collection.setCategoryName()).put("CategoryID", FakeData_Collection.setCategoryID()));
-		//jArray.put(new JSONObject().put("CategoryID", FakeData_Collection.setCategoryID()));
 		jObject.put("categories", jArray);
+	}
+	
+public static void setUserData_Name() {
+		
+		jObject.put("name", FakeData_Collection.setName());
 	}
 
 }
