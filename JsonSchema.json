@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "color": {
+        "type": "integer"
+      },
+      "year": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "pantone_value": {
+        "type": "string"
+      },
+      "categories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "CategoryID": {
+              "type": "integer"
+            },
+            "CategoryName": {
+              "type": "string"
+            }
+          },
+          "required": ["CategoryID", "CategoryName"]
+        }
+      }
+    },
+    "required": ["color", "year", "name", "id", "pantone_value", "categories"]
+  }
+}

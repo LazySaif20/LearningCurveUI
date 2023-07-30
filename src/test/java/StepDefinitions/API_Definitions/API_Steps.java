@@ -1,24 +1,22 @@
 package StepDefinitions.API_Definitions;
 
+import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import org.testng.Assert;
 
 import com.google.gson.JsonArray;
-import com.google.gson.JsonParser;
-import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
 
 import Utils.FakeData_Collection;
-import io.cucumber.gherkin.internal.com.eclipsesource.json.JsonObject;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -63,7 +61,7 @@ public class API_Steps {
 		// Write code here that turns the phrase above into concrete actions
 		FakeData_Collection.setUserData_User();
 		RestAssured.baseURI = baseURL;
-		reqSpecification = RestAssured.given().contentType("application/json")
+		reqSpecification = RestAssured.given().contentType(ContentType.JSON)
 				.body(FakeData_Collection.jObject.toString());
 	}
 
@@ -125,7 +123,7 @@ public class API_Steps {
 		// Write code here that turns the phrase above into concrete actions
 		FakeData_Collection.setUserData_Name();
 		RestAssured.baseURI = baseURL;
-		reqSpecification = RestAssured.given().contentType("application/json")
+		reqSpecification = RestAssured.given().contentType(ContentType.JSON)
 				.body(FakeData_Collection.jObject.toString());
 	}
 	
@@ -161,5 +159,26 @@ public class API_Steps {
 		Assert.assertEquals(CategoryID, responseCategoryId.get(0));
 		Assert.assertEquals(CategoryName, responseCategoryName.get(0));
 		
+	}
+	
+	@Then("print all the member names")
+	public void print_all_the_member_names() {
+		// Write code here that turns the phrase above into concrete actions
+		List<String> names = JsonPath.read(response.body().asString(), "$[*]..name");
+		System.out.println(names);
+	}
+	
+	@When("GET call to {string} with id as {int}")
+	public void get_call_to_url_with_id(String url, int id) throws URISyntaxException {
+		// Write code here that turns the phrase above into concrete actions
+		RestAssured.baseURI = baseURL;
+		reqSpecification = RestAssured.given();
+		response = reqSpecification.get(new URI(url+"?id="+id));
+	}
+	
+	@Then("validate the json response schema is as expected")
+	public void validate_the_json_response_schema_is_as_expected() {
+		// Write code here that turns the phrase above into concrete actions
+		response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File("C:\\Users\\mdsai\\LearningCurve\\LearningCurveUI\\JsonSchema.json")));
 	}
 }

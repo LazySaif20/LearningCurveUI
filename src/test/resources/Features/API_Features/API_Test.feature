@@ -67,3 +67,21 @@ Feature: Create Sample Feature file
     Examples: 
       | path | query             | color      | year | name         | id | pantone_value | CategoryID | CategoryName             |
       | data | name,Nigel Casper | 1378387981 | 1947 | Nigel Casper | 32 | Spock         |         28 | Herzog, Casper and Lakin |
+
+  @GetAllMemeberNames
+  Scenario Outline: Get the List of All member names in db
+    When GET call to "<url>"
+    Then print all the member names
+
+    Examples: 
+      | url   |
+      | /data |
+
+  @SchemaVaidation
+  Scenario Outline: Validate the JSON Schema is as expected
+    When GET call to "<uri>" with id as <id>
+    Then validate the json response schema is as expected
+
+    Examples: 
+      | uri   | id |
+      | /data | 45 |
