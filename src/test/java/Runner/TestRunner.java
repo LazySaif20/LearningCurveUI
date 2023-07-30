@@ -24,7 +24,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = "src/test/resources/Features", glue = { "StepDefinitions", "Hooks" }, plugin = {
 		"json:target/cucumber-reports/CucumberUI_Report.json", "html:target/cucumber-reports/CucumberUI_Report.html",
-		"rerun:target/cucumber-reports/CucumberUI_Report.txt", "pretty" }, tags = "@ValidateCarsGuideLogoSection")
+		"rerun:target/cucumber-reports/CucumberUI_Report.txt", "pretty" }, tags = "@HomePageValidation")
 public class TestRunner {
 
 	private io.cucumber.testng.TestNGCucumberRunner testNGCucumberRunner;

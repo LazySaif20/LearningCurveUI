@@ -26,8 +26,8 @@ Feature: Create Sample Feature file
     Then validat the category name of the <RecordNumber> th category is as expected "<categoryName>"
 
     Examples: 
-      | uri   | categoryName             | RecordNumber |
-      | /data | Herzog, Casper and Lakin |            5 |
+      | uri   | categoryName                    | RecordNumber |
+      | /data | Leannon, Cummings and Abernathy |            3 |
 
   @setValues @POST
   Scenario Outline: POST a new user in db
@@ -65,5 +65,5 @@ Feature: Create Sample Feature file
     Then validate the user details are as expected as <color>, <year>, "<name>", <id>, "<pantone_value>", <CategoryID> and "<CategoryName>"
 
     Examples: 
-      | path  | query             | color      | year | name         | id | pantone_value | CategoryID | CategoryName             |
+      | path | query             | color      | year | name         | id | pantone_value | CategoryID | CategoryName             |
       | data | name,Nigel Casper | 1378387981 | 1947 | Nigel Casper | 32 | Spock         |         28 | Herzog, Casper and Lakin |
