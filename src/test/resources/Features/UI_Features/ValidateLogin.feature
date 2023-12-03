@@ -8,3 +8,5 @@ Feature: Validate Cars Guide Homepage
 	Given when user is on the CarsGuide HomePage
 	Then user is able to see the CarsGuide Logo
 	Then search for "BMW"
+
+ #Test from master
