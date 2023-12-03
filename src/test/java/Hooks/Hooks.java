@@ -53,7 +53,7 @@ public class Hooks {
 		//driver.quit();
 	}
 
-	//This is in Master
+	//This is in Master snd pushed
 	public void logInReport(String item, String str) {
 		this.dataHolder.scenario.log(item+": "+str);
 	}
