@@ -52,7 +52,8 @@ public class Hooks {
 		//driver.close();
 		//driver.quit();
 	}
-	
+
+	//This is in Master
 	public void logInReport(String item, String str) {
 		this.dataHolder.scenario.log(item+": "+str);
 	}
